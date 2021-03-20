@@ -1,18 +1,15 @@
-//
-moveForward()
-
-while isOnGem {
+func solve2Gems() {
     collectGem()
     turnLeft()
-    if !isBlocked{
-        moveForward()
-        collectGem()
-    }else{
-        turnLeft()
-        moveForward()
-        turnRight()
-        moveForward()
-        turnLeft()
-    }
-    
+    moveForward()
+    collectGem()
+    turnLeft()
+    moveForward()
+    turnRight()
+    moveForward()
+}
+
+moveForward()
+for i in 1 ... 4 {
+    solve2Gems()
 }
