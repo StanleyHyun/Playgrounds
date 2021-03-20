@@ -10,6 +10,6 @@ func solve2Gems() {
 }
 
 moveForward()
-for i in 1 ... 4 {
+while isOnGem {
     solve2Gems()
 }
