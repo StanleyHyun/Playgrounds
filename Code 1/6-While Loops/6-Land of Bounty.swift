@@ -1,11 +1,26 @@
 //
-while isOnClosedSwitch && isOnGem{
-    moveForward()
-    if isOnGem {
-        collectGem()
+func solveRow() {
+    while !isBlocked{
+        if isOnClosedSwitch {
+            toggleSwitch()
+        }else if isOnGem{
+            collectGem()
+        }
+        moveForward()
     }
-    if isOnClosedSwitch {
-        toggleSwitch()
-    }
-    
 }
+
+moveForward()
+solveRow()
+turnRight()
+moveForward()
+turnRight()
+solveRow()
+
+
+turnLeft()
+moveForward()
+turnLeft()
+
+solveRow()
+
