@@ -8,13 +8,8 @@ func solveOneRow() {
     }
 }
 
-
-solveOneRow()
-turnRight()
-moveForward()
-solveOneRow()
-turnRight()
-solveOneRow()
-turnRight()
-solveOneRow()
-turnRight()
+while !isOnGem {
+    solveOneRow()
+    turnRight()
+}
+collectGem()
