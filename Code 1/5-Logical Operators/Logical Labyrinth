@@ -1,0 +1,38 @@
+/*
+ 1rst make a function 
+ if is on a gem and on a closeswitched 
+ 
+ 
+ */
+
+
+
+moveForward()
+toggleAndCollect()
+if isOnOpenSwitch {
+    if isOnGem && isOnClosedSwitch{
+        toggleSwitch()
+        collectGem()
+    }
+    
+}
+
+
+func completeTheL() {
+    for i in 1 ... 2{
+        moveForward()
+    }
+    collectGem()
+}
+
+func turnAround() {
+    turnLeft()
+    turnLeft()
+}
+
+
+func toggleAndCollect() {
+    toggleSwitch()
+    collectGem()
+    
+}
