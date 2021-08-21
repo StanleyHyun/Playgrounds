@@ -1,15 +1,32 @@
 //
-func solveOneRow() {
-    while !isBlocked {
-        moveForward()
-        if isOnClosedSwitch {
-            toggleSwitch()
+while !isBlocked {
+    for i in 1 ... 3 {
+        checkTheMoveForward()
+        if isBlocked {
+            turnRight()
         }
+        
     }
+        
+    }
+    
+    
+
+
+func checkTheMoveForward() {
+    checkTheSquare()
+    moveForward()
+    
 }
 
-while !isOnGem {
-    solveOneRow()
-    turnRight()
-}
-collectGem()
+func checkTheSquare() {
+    if isOnClosedSwitch {
+        toggleSwitch()
+    }else if isOnOpenSwitch{
+        moveForward()
+    }
+    
+        
+    }
+    
+
